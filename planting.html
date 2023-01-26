@@ -1,0 +1,198 @@
+<header>
+
+<a href="#" class="logo"><i class="fas fa-seedling"></i>BeGreen</a>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#service">service</a></li>
+        <li><a href="#project">project</a></li>
+        <li><a href="#donate">donate</a></li>
+        <li><a href="#post">post</a></li>
+    </ul>
+</nav>
+
+<div class="fas fa-bars"></div>
+
+</header>
+<body>
+ <div>
+  <h3>Prepare the proper planting hole. </h3>
+  <p>When preparing any hole for planting, make it three times wider than the current root mass but never deeper than the plant was growing in its previous environment.
+
+  An even better guide with trees is to look for the flare of the trunk near the soil level. Don’t place the tree in the planting hole so deep that any part of that flare is covered with soil. The truth is, even nurseries sometimes put plants in containers too deeply. There have been many times where I’ve actually had to pull away soil to find the base of the trunk flare and true surface roots. Make a habit of checking this.
+  </p>
+  <h3>Plant high.</h3>
+  <p>I go even one step further by placing trees and shrubs in their new environment with up to 25% of the root ball higher than the surrounding soil level. I then taper soil up to cover all the roots and add a generous layer of mulch above that. Newly disturbed soil tends to settle and shrubs and trees planted at grade can quickly settle below grade and succumb to root rot or disease.
+
+  In my book, it’s always better to plant a tree or shrub slightly high and allow the area to drain away rather than for a plant to sit in a bowl and collect excess water.
+  </p>
+  <h3>Inspect the roots and disturb when necessary.</h3>
+  <p>Once the plant is out of its container, look at the roots. If they are densely bound in a circular pattern or have started growing in the shape of the container (even slightly), break up the pattern.
+
+  It’s vitally important to stop this pattern now. The biggest mistake you can make at this point is to place a rootbound plant into the ground as is. Unless you break up the pattern, you’ve likely sentenced the plant to a slow death. At a minimum, it will likely never establish or reach a fraction of its potential.
+
+  Don’t worry about hurting the roots or losing soil as you break the roots apart or even cut some away. Better to give them a fresh start than allow the constrictive pattern to only get worse below ground. While you don’t want to be any rougher than necessary, do what you must to arrest the pattern.
+
+  I often scratch my fingers across the sides and bottom of the root mass in mild cases. In more severe situations, I’ll slice up the roots vertically with a pruning saw, hack off the bottom inch or so, and or pull apart the root mass to clearly create new opportunities for non-circular new root development.</p>
+  <h3> Don’t amend the soil.</h3>
+  <p>Contrary to traditional planting methods, contemporary research indicates that you should not amend the hole with additional organic material (unless you intend to amend the entire area where roots will eventually grow). Roots growing in amended soil rarely venture into harder native soil. The long-term affect is a smaller root system, reduced growth and a less hardy plant.
+  </p>
+  <h3> Eliminate air pockets.</h3>
+  <p>While you could lightly tamp or hand-pack the soil around the plant roots to ensure good soil-to-root contact, I prefer to add a stiff spray of water to the hole after backfilling half way. Not only does it provide needed moisture but the water also helps eliminate air pockets that could otherwise result in dead roots or worse (without compacting the soil too much). Finally, water again gently but thoroughly once all the soil is in place.
+  </p>
+  <h3>Add mulch.</h3>
+  <p>Starting about two inches from the trunk (leave this area exposed), place roughly two inches of organic matter such as shredded leaves, or ground bark or nuggets around the plant, at least out to the drip line. Further is better. Mulch helps retain much-needed moisture and helps keep roots cooler near the surface—a very important requirement for newly installed plants.
+  </p>
+  <h3> Water Properly Until Established.</h3>
+  <p>The most important job you will have after planting is to keep plants and trees well watered until established. This can take weeks to months, to even a year or more in some cases.
+  </p>
+ </div>
+ <style>
+
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+   :root{
+       --begreen:#0d9979;
+   }
+
+   *{
+       font-family: 'Open Sans', sans-serif;
+       margin:0; padding:0;
+       box-sizing: border-box;
+       text-transform: capitalize;
+       text-decoration: none;
+       transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+   }
+
+   *::selection{
+       background:var(--begreen);
+       color:#fff;
+   }
+
+   html{
+       font-size: 62.5%;
+       overflow-x: hidden;
+   }
+
+   .btn{
+       height:3.5rem;
+       width:15rem;
+       background:none;
+       outline:none;
+       border:.2rem solid var(--begreen);
+       color:var(--begreen);
+       font-size: 2rem;
+       margin:1rem 0;
+       cursor: pointer;
+       overflow: hidden;
+       z-index: 0;
+       position: relative;
+   }
+
+   .btn::before, .btn::after{
+       position: absolute;
+       content: '';
+       top:0; left:0;
+       height:100%;
+       width: 100%;
+       background:var(--begreen);
+       z-index: -1;
+       transition: all 0.5s cubic-bezier(.37,1.14,.26,1.24);
+   }
+
+   .btn::before{
+       clip-path: polygon(0 0, 0 0, 0 0);
+   }
+
+   .btn:hover:before{
+       clip-path: polygon(0 0, 0 100%, 100% 0);
+   }
+
+   .btn::after{
+       clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+   }
+
+   .btn:hover:after{
+       clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+   }
+
+   .btn:hover{
+       color:#fff;
+   }
+
+   .heading{
+       text-align: center;
+       font-size: 4rem;
+       color:#555;
+       padding:1rem;
+       padding-top: 7rem;
+   }
+
+   .heading i{
+       color:var(--begreen);
+       font-size: 2rem;
+   }
+
+
+   header{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       background:#fff;
+       box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+       position: fixed;
+       top:0; left:0;
+       z-index: 1000;
+       padding: 1rem 5rem;
+       width: 100%;
+   }
+
+   header .logo{
+       color:var(--begreen);
+       font-size: 3rem;
+   }
+
+   header .navbar ul{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       list-style: none;
+   }
+
+   header .navbar ul li{
+       margin:0 1rem;
+   }
+
+   header .navbar ul li a{
+       font-size: 2rem;
+       color:#666;
+   }
+
+   header .navbar ul li a:hover{
+       color:var(--begreen);
+   }
+
+   header .fa-bars{
+       font-size: 3rem;
+       color:#666;
+       cursor: pointer;
+       display: none;
+   }
+
+
+  div{
+    padding: 70px 5px 10px 5px;
+  }
+
+  h3 {
+    color: #0d9979;
+    font-size: 30px;
+  }
+  p {
+   font-size: 15px;
+  }
+
+ </style>
+</body>

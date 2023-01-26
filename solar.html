@@ -1,0 +1,209 @@
+<header>
+
+<a href="#" class="logo"><i class="fas fa-seedling"></i>BeGreen</a>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#service">service</a></li>
+        <li><a href="#project">project</a></li>
+        <li><a href="#donate">donate</a></li>
+        <li><a href="#post">post</a></li>
+    </ul>
+</nav>
+
+<div class="fas fa-bars"></div>
+
+</header>
+<body>
+ <div>
+  <h3> Solar Panel Installation Process</h3>
+  <p>The most common location for the installation of solar PV panels is the roof. Most roofs typically have the desired specifications for the installation, so that panels get the maximum sunlight.
+
+  Nevertheless, if installation on the roof is not applicable or desired, the solar panels could also be mounted on the ground. You just need to make sure that there are no objects blocking access to the sun.
+   </p>
+   <h3>Set Up Scaffolding</h3>
+   <p>Firstly, you have to erect scaffolding to ensure safety during the whole installation process when being on the roof.</p>
+   <h3>Install Solar Panel Mounts</h3>
+   <p>Then, the solar panel mounting system has to be set up. This will support the base of the solar panels. The whole mounting structure must be tilted and have an angle between 18 to 36 degrees to have maximum sunlight exposure.
+
+</p>
+   <h3>Install the Solar Panels</h3>
+   <p>When the mounts are set up, the solar panel itself has to be installed on the mounting structure. Make sure to tighten up all the bolts and nuts so that it stays stable.</p>
+   <h3>Wire the Solar Panels</h3>
+   <p>The next step in the installation process is to install the electrical wiring. In most cases, MC4 connectors are used because they are suited for all types of solar panels. Make sure to shut off the household’s electricity supply during the wiring installation.</p>
+   <h3>Install Solar Inverter</h3>
+   <p>After that, the solar inverter must be connected to the system. It is typically installed near the main panel and it could be both indoors and outdoors. Inverters are more efficient if kept in a cooler place.
+
+If the inverter is outdoors, it should be kept out from the afternoon sun. If it is installed indoors, the garage or utility room are usually the best places, since they stay cool for most of the year and have ventilation.
+
+</p>
+   <h3>Bond Solar Inverter and Solar Battery</h3>
+   <p>Thereafter, the solar inverter has to be connected to the solar battery. The solar battery storage can save you from worrying about the lack of usable energy during cloudy times, it can also lower the solar battery storage system costs during installation.</p>
+   <h3>Connect the Inverter to the Consumer Unit</h3>
+   <p>The inverter should be connected to the consumer unit to generate electricity. A generation meter should also be connected to monitor the amount of electricity the solar panels actually produce. You can use your computer or other device to check your solar system’s performance. For example, you can check how much electricity you generate at different times and decide what time is suitable for using your washing machine or other utilities.</p>
+   <h3>Start and Test Solar Panels</h3>
+   <p>The final step is to switch the power on and test the newly installed solar panel system. After that, the solar panel installation process is completed.
+
+</p>
+   <h3>Solar Panel Maintenance</h3>
+   <p>Since there are no moving parts, solar panels require very little maintenance. Once you have covered the installation cost of solar panels, there are not many costs associated with maintaining them.
+
+Having said that, you should inspect them a few times per year for dirt or some other things that might have piled on top. It is important that the panels are clean and there is nothing blocking them from efficiently absorbing the sun.
+
+Before cleaning the panels yourself, you should consult with your installer about the warranty conditions. Some solar panel manufacturers could terminate the warranty if any self cleaning is done.
+
+For a general cleaning, you can just use a normal garden hose to wash the face of the panels. You should do this in the morning or evening. Also avoid spraying them with cold water while they are hot because that might damage them.
+
+Moreover, If the panels need some more cleaning that the hose cannot provide, you can use a sponge with soapy water to scrub them. You can also get the services of a cleaning company. This is advisable if the panels are too high or need more thorough cleaning.
+
+You should have your system examined every 4-6 years by an installer. </p>
+</div>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+    :root{
+        --begreen:#0d9979;
+    }
+
+    *{
+        font-family: 'Open Sans', sans-serif;
+        margin:0; padding:0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+    }
+
+    *::selection{
+        background:var(--begreen);
+        color:#fff;
+    }
+
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+
+    .btn{
+        height:3.5rem;
+        width:15rem;
+        background:none;
+        outline:none;
+        border:.2rem solid var(--begreen);
+        color:var(--begreen);
+        font-size: 2rem;
+        margin:1rem 0;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 0;
+        position: relative;
+    }
+
+    .btn::before, .btn::after{
+        position: absolute;
+        content: '';
+        top:0; left:0;
+        height:100%;
+        width: 100%;
+        background:var(--begreen);
+        z-index: -1;
+        transition: all 0.5s cubic-bezier(.37,1.14,.26,1.24);
+    }
+
+    .btn::before{
+        clip-path: polygon(0 0, 0 0, 0 0);
+    }
+
+    .btn:hover:before{
+        clip-path: polygon(0 0, 0 100%, 100% 0);
+    }
+
+    .btn::after{
+        clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+    }
+
+    .btn:hover:after{
+        clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    }
+
+    .btn:hover{
+        color:#fff;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 4rem;
+        color:#555;
+        padding:1rem;
+        padding-top: 7rem;
+    }
+
+    .heading i{
+        color:var(--begreen);
+        font-size: 2rem;
+    }
+
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background:#fff;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+        position: fixed;
+        top:0; left:0;
+        z-index: 1000;
+        padding: 1rem 5rem;
+        width: 100%;
+    }
+
+    header .logo{
+        color:var(--begreen);
+        font-size: 3rem;
+    }
+
+    header .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    header .navbar ul li{
+        margin:0 1rem;
+    }
+
+    header .navbar ul li a{
+        font-size: 2rem;
+        color:#666;
+    }
+
+    header .navbar ul li a:hover{
+        color:var(--begreen);
+    }
+
+    header .fa-bars{
+        font-size: 3rem;
+        color:#666;
+        cursor: pointer;
+        display: none;
+    }
+
+
+   div{
+     padding: 70px 5px 10px 5px;
+   }
+
+   h3 {
+     color: #0d9979;
+     font-size: 30px;
+   }
+   p {
+    font-size: 15px;
+   }
+
+  </style>
+</body>

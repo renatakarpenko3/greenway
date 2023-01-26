@@ -1,0 +1,203 @@
+<header>
+
+<a href="#" class="logo"><i class="fas fa-seedling"></i>BeGreen</a>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#service">service</a></li>
+        <li><a href="#project">project</a></li>
+        <li><a href="#donate">donate</a></li>
+        <li><a href="#post">post</a></li>
+    </ul>
+</nav>
+
+<div class="fas fa-bars"></div>
+
+</header>
+<body>
+ <div>
+  <h3> Install water-saving shower heads or flow restrictors</h3>
+
+  <p>Your hardware or plumbing supply store stocks inexpensive shower heads or flow restrictors that will cut your shower flow to about three gallons a minute instead of five to ten. They are easy to install, and your showers will still be cleansing and refreshing.
+</p>
+  <h3>Take baths</h3>
+
+  <p>A partially filled tub uses less water than all but the shortest showers.</p>
+  <h3>A partially filled tub uses less water than all but the shortest showers.</h3>
+  <p>If you wash dishes by hand, don't leave the water running for rinsing
+
+  If you have two sinks, fill one with rinse water. If you have only one sink, first gather all your washed dishes in a dish rack, then rinse them quickly with a spray device or a pan of water.
+</p>
+  <h3>Don't water the gutter</h3>
+
+
+  <p>Position your sprinklers so that water lands on your lawn or garden, not in areas where it does no good. Also, avoid watering on windy days when much of your water may be carried off to the streets and sidewalks.
+</p>
+
+
+  <h3>Many beautiful trees and plants thrive without irrigation.</h3>
+
+   <p>Put a layer of mulch around trees and plants.</p>
+
+
+
+  <h3>Use a broom to clean driveways, sidewalks and steps</h3>
+
+  <p>Using a hose wastes hundreds and hundreds of gallons of water.</p>
+
+
+
+   <h3>Tell your children not to play with the hose and sprinklers</h3>
+
+   <p>Children love to play under a hose or sprinkler on a hot day. Unfortunately, this practice is extremely wasteful of precious water and should be discouraged.
+</p>
+ </div>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+    :root{
+        --begreen:#0d9979;
+    }
+
+    *{
+        font-family: 'Open Sans', sans-serif;
+        margin:0; padding:0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+    }
+
+    *::selection{
+        background:var(--begreen);
+        color:#fff;
+    }
+
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+
+    .btn{
+        height:3.5rem;
+        width:15rem;
+        background:none;
+        outline:none;
+        border:.2rem solid var(--begreen);
+        color:var(--begreen);
+        font-size: 2rem;
+        margin:1rem 0;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 0;
+        position: relative;
+    }
+
+    .btn::before, .btn::after{
+        position: absolute;
+        content: '';
+        top:0; left:0;
+        height:100%;
+        width: 100%;
+        background:var(--begreen);
+        z-index: -1;
+        transition: all 0.5s cubic-bezier(.37,1.14,.26,1.24);
+    }
+
+    .btn::before{
+        clip-path: polygon(0 0, 0 0, 0 0);
+    }
+
+    .btn:hover:before{
+        clip-path: polygon(0 0, 0 100%, 100% 0);
+    }
+
+    .btn::after{
+        clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+    }
+
+    .btn:hover:after{
+        clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    }
+
+    .btn:hover{
+        color:#fff;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 4rem;
+        color:#555;
+        padding:1rem;
+        padding-top: 7rem;
+    }
+
+    .heading i{
+        color:var(--begreen);
+        font-size: 2rem;
+    }
+
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background:#fff;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+        position: fixed;
+        top:0; left:0;
+        z-index: 1000;
+        padding: 1rem 5rem;
+        width: 100%;
+    }
+
+    header .logo{
+        color:var(--begreen);
+        font-size: 3rem;
+    }
+
+    header .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    header .navbar ul li{
+        margin:0 1rem;
+    }
+
+    header .navbar ul li a{
+        font-size: 2rem;
+        color:#666;
+    }
+
+    header .navbar ul li a:hover{
+        color:var(--begreen);
+    }
+
+    header .fa-bars{
+        font-size: 3rem;
+        color:#666;
+        cursor: pointer;
+        display: none;
+    }
+
+
+   div{
+     padding: 70px 5px 10px 5px;
+   }
+
+   h3 {
+     color: #0d9979;
+     font-size: 30px;
+   }
+   p {
+    font-size: 15px;
+   }
+
+  </style>
+</body>

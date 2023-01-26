@@ -1,0 +1,192 @@
+<header>
+
+<a href="#" class="logo"><i class="fas fa-seedling"></i>BeGreen</a>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#service">service</a></li>
+        <li><a href="#project">project</a></li>
+        <li><a href="#donate">donate</a></li>
+        <li><a href="#post">post</a></li>
+    </ul>
+</nav>
+
+<div class="fas fa-bars"></div>
+
+</header>
+<body>
+ <div>
+   <h3>Importance of saving forests</h3>
+   <p>From the boreal forests in Canada to the Amazon Rainforest in Brazil, breathtaking forests populate huge swaths of our planet. Unfortunately, fires, loggers, and more destroy these trees at an alarming rate. If you want to learn how to save trees, you’ve come to the right place.
+     Educating yourself is the crucial first step in the fight for the earth’s forests. Once you know how to protect our forests, you can go out and show others how to save trees too! In this article we’ll discuss these 5 ways that you can preserve our forest.
+ </p>
+ <h3>The Importance of Healthy Forests</h3>
+ <p>Almost 2 billion people rely on the world’s forests for their livelihoods. Without these mighty forests, these people will lose their primary sources of water, food, shelter, and income.
+
+ Perhaps more importantly, though, is the impact of trees on the environment. Among other things, tree species clean the air and directly fight climate change. When large amounts of carbon dioxide build up in the air, lush forests absorb that CO2 and turn it into breathable oxygen, reducing air pollution. For these reasons and the beauty of our planet, it’s important that you protect forests by following some of the tips shared above. Learning how to save trees is one of the most powerful things you can do to help the planet.</p>
+ <h3>Plant New Trees</h3>
+ <p>Without a doubt, the easiest way to support trees is to go out and plant trees yourself. Whether you plant a single new tree in your backyard or plant several with a group, your actions will have a significant positive impact on the planet and climate change.
+ According to the National Wildlife Federation, just one tree will absorb more than one ton of carbon dioxide in its lifetime. That’s equivalent to more than 2,000 miles driven by the average car.</p>
+ <h3>Buy Rain Forest Alliance Certified Products</h3>
+ <p>Part of learning how to save trees is educating yourself about how products impact the environment. For example, Rain Forest Alliance Certified products support sustainable forest management and allow forest-reliant communities to thrive.
+
+Furthermore, Rain Forest Alliance Certified products also ensure that everyone involved in the production process is treated and paid fairly. They stay true to their goal of creating a world where “people and nature thrive in harmony.”
+</p>
+<h3>Support Conservation Organizations</h3>
+<p>Sometimes you can’t directly protect trees. Luckily, there are plenty of organizations out there that help support the world’s forests.</p>
+<h3>Use Tree-Free Products</h3>
+<p>Tree-free alternatives to traditional wood or paper products are becoming more and more popular. Bamboo products, in particular, are rising to prominence. Bamboo toilet paper, toothbrushes, paper towels, and more have become modern green staples.
+
+Moreover, bamboo products are soft, strong, and wholly sustainable! Once they’ve been harvested, bamboo stalks begin to grow back almost immediately without the need for reseeding or fertilizer.</p>
+<h3>Enjoy Forests Responsibly</h3>
+<p>Going out into nature and enjoying our existing forests for yourself is a big part of learning how to save trees. Once you get outside and appreciate all that our forests have to offer, you’ll be filled with a new vigor for protecting the planet.We can all enjoy the beauty of our planet’s trees, but we must do so responsibly. Following the Leave No Trace code of ethics allows everyone to safely enjoy the outdoors without hurting it.</p>
+ </div>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+    :root{
+        --begreen:#0d9979;
+    }
+
+    *{
+        font-family: 'Open Sans', sans-serif;
+        margin:0; padding:0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+    }
+
+    *::selection{
+        background:var(--begreen);
+        color:#fff;
+    }
+
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+
+    .btn{
+        height:3.5rem;
+        width:15rem;
+        background:none;
+        outline:none;
+        border:.2rem solid var(--begreen);
+        color:var(--begreen);
+        font-size: 2rem;
+        margin:1rem 0;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 0;
+        position: relative;
+    }
+
+    .btn::before, .btn::after{
+        position: absolute;
+        content: '';
+        top:0; left:0;
+        height:100%;
+        width: 100%;
+        background:var(--begreen);
+        z-index: -1;
+        transition: all 0.5s cubic-bezier(.37,1.14,.26,1.24);
+    }
+
+    .btn::before{
+        clip-path: polygon(0 0, 0 0, 0 0);
+    }
+
+    .btn:hover:before{
+        clip-path: polygon(0 0, 0 100%, 100% 0);
+    }
+
+    .btn::after{
+        clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+    }
+
+    .btn:hover:after{
+        clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    }
+
+    .btn:hover{
+        color:#fff;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 4rem;
+        color:#555;
+        padding:1rem;
+        padding-top: 7rem;
+    }
+
+    .heading i{
+        color:var(--begreen);
+        font-size: 2rem;
+    }
+
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background:#fff;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+        position: fixed;
+        top:0; left:0;
+        z-index: 1000;
+        padding: 1rem 5rem;
+        width: 100%;
+    }
+
+    header .logo{
+        color:var(--begreen);
+        font-size: 3rem;
+    }
+
+    header .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    header .navbar ul li{
+        margin:0 1rem;
+    }
+
+    header .navbar ul li a{
+        font-size: 2rem;
+        color:#666;
+    }
+
+    header .navbar ul li a:hover{
+        color:var(--begreen);
+    }
+
+    header .fa-bars{
+        font-size: 3rem;
+        color:#666;
+        cursor: pointer;
+        display: none;
+    }
+
+
+   div{
+     padding: 70px 5px 10px 5px;
+   }
+
+   h3 {
+     color: #0d9979;
+     font-size: 30px;
+   }
+   p {
+    font-size: 15px;
+   }
+
+  </style>
+</body>
